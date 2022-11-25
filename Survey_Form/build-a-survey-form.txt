@@ -1,0 +1,232 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Plant a Tree Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Welcome to Plant a Tree</h1>
+    <p id="description">Thank you for taking the time to help making the world a better place.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name 
+          <input id="name" 
+                 name="name" 
+                type="text" 
+                placeholder="Enter your name" required /></label>
+        <label for="email" id="email-label">Email 
+          <input id="email" 
+                 name="email" 
+                 type="email" 
+                 placeholder="Enter your email" required /></label>
+        <label for="number" id="number-label">Age (optional) 
+          <input id="number" 
+                 type="number" 
+                 name="age" 
+                 min="13" max="120" 
+                 placeholder="Age" /></label>
+        <label for="area">Where would you like to plant a tree?
+          <select id="dropdown" name="area">
+            <option value="" disabled selected>Select an area</option>
+            <option value="north-america">North America</option>
+            <option value="latin-america">Latin America</option>
+            <option value="africa">Africa</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="any">Any of the Above</option>
+          </select>
+        </label>     
+        <label for="reason">What is your reason for planting a tree?
+          <select id="dropdown" name="reason">
+            <option value="" disabled selected>Select an option</option>
+            <option value="planet">Helping the planet</option>
+            <option value="animal">Caring for animals</option>
+            <option value="humans">Better world for humans</option>
+            <option value="all">All of the above</option>           
+          </select>
+        </label>
+        <label for="tree-type">What type of tree would you like to plant? (Check all that apply)
+          </label name="tree-type">
+        <label for="tree-type">
+          <input id="tree-type" 
+                 type="checkbox" 
+                 name="maple" 
+                 class="inline" 
+                 value="tree-type" /> Maple Tree</label>
+        <label for="tree-type">
+          <input id="tree-type" 
+                type="checkbox" 
+                name="mahagony" 
+                class="inline" 
+                value="tree-type"/> Mahagony</label>
+        <label for="tree-type">
+          <input id="tree-type" 
+                 type="checkbox" 
+                 name="rosewood" 
+                 class="inline" 
+                 value="tree-type"/> Indian Rosewood</label>
+        <label for="tree-type">
+          <input id="tree-type" 
+                type="checkbox" 
+                name="eucalyptus" 
+                class="inline" 
+                value="tree-type" /> Eucalyptus</label>
+        <label for="tree-type">
+          <input id="tree-type" 
+                 type="checkbox" 
+                 name="cork" 
+                 class="inline" 
+                 value="tree-type" /> Cork Tree</label>
+        <label for="tree-type">
+          <input id="tree-type" 
+                 type="checkbox" 
+                 name="willow" 
+                 class="inline" 
+                 value="tree-type" /> Willow Tree</label>
+        <label for="tree-type">
+          <input id="tree-type" 
+                 type="checkbox" 
+                 name="oak" 
+                 class="inline" 
+                 value="tree-type" /> Oak Tree</label>
+        <label for="tree-type">
+          <input id="tree-type" 
+                 type="checkbox" 
+                 name="walnut" 
+                 class="inline" 
+                 value="tree-type" /> Black Walnut</label>
+        <label for="tree-type">
+          <input id="tree-type" 
+                 type="checkbox" 
+                 name="apple" 
+                 class="inline" 
+                 value="tree-type" /> Apple Tree</label>
+        <label for="tree-type">
+          <input id="tree-type" 
+                 type="checkbox" 
+                 name="palm" 
+                 class="inline" 
+                 value="tree-type"/> Palm Tree</label>
+        <label for="tree-type">
+          <input id="tree-type" 
+                 type="checkbox" 
+                 name="flamboyant" 
+                 class="inline" 
+                 value="tree-type" /> Flamboyant Tree</label>
+        <hr>
+        <label for="recommend">Would you recommend Plant a Tree to a friend?</label name="recommend">
+        <label for="definitely">
+          <input id="definitely" 
+                type="radio" 
+                name="recommend" 
+                class="inline" 
+                value="yes" /> Definitely</label>
+        <label for="maybe">
+          <input id="maybe" 
+                 type="radio" 
+                 name="recommend" 
+                 class="inline" 
+                 value="maybe" /> Maybe</label>
+        <label for="not sure">
+          <input id="maybe" 
+                 type="radio" 
+                 name="recommend" 
+                 class="inline" 
+                 value="not" /> Not sure</label>
+        <hr>
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>    
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    background: color: darkblue;
+    background-image: url(https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg);
+    background-size: cover;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-shadow: 2px 4px 3px #000000;
+    line-height: 1.4;
+    color: white;
+    margin: 0;  
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  display: block;
+  width: 60vw;
+  min-width: 480px;
+  margin: 0 auto;
+  font-family: Poppins, sans-serif;
+  background: rgba(27, 27, 50, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+ }
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #ffffff;
+  border: none;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #556b2f;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+** end of undefined **
+

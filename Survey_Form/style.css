@@ -1,0 +1,77 @@
+body {
+    background: color: darkblue;
+    background-image: url(https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg);
+    background-size: cover;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-shadow: 2px 4px 3px #000000;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  display: block;
+  width: 60vw;
+  min-width: 480px;
+  margin: 0 auto;
+  font-family: Poppins, sans-serif;
+  background: rgba(27, 27, 50, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+ }
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #ffffff;
+  border: none;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #556b2f;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}

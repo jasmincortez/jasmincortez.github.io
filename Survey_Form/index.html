@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Plant a Tree Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Welcome to Plant a Tree</h1>
+    <p id="description">Thank you for taking the time to help making the world a better place.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name
+          <input id="name"
+                 name="name"
+                type="text"
+                placeholder="Enter your name" required /></label>
+        <label for="email" id="email-label">Email
+          <input id="email"
+                 name="email"
+                 type="email"
+                 placeholder="Enter your email" required /></label>
+        <label for="number" id="number-label">Age (optional)
+          <input id="number"
+                 type="number"
+                 name="age"
+                 min="13" max="120"
+                 placeholder="Age" /></label>
+        <label for="area">Where would you like to plant a tree?
+          <select id="dropdown" name="area">
+            <option value="" disabled selected>Select an area</option>
+            <option value="north-america">North America</option>
+            <option value="latin-america">Latin America</option>
+            <option value="africa">Africa</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="any">Any of the Above</option>
+          </select>
+        </label>
+        <label for="reason">What is your reason for planting a tree?
+          <select id="dropdown" name="reason">
+            <option value="" disabled selected>Select an option</option>
+            <option value="planet">Helping the planet</option>
+            <option value="animal">Caring for animals</option>
+            <option value="humans">Better world for humans</option>
+            <option value="all">All of the above</option>
+          </select>
+        </label>
+        <label for="tree-type">What type of tree would you like to plant? (Check all that apply)
+          </label name="tree-type">
+        <label for="tree-type">
+          <input id="tree-type"
+                 type="checkbox"
+                 name="maple"
+                 class="inline"
+                 value="tree-type" /> Maple Tree</label>
+        <label for="tree-type">
+          <input id="tree-type"
+                type="checkbox"
+                name="mahagony"
+                class="inline"
+                value="tree-type"/> Mahagony</label>
+        <label for="tree-type">
+          <input id="tree-type"
+                 type="checkbox"
+                 name="rosewood"
+                 class="inline"
+                 value="tree-type"/> Indian Rosewood</label>
+        <label for="tree-type">
+          <input id="tree-type"
+                type="checkbox"
+                name="eucalyptus"
+                class="inline"
+                value="tree-type" /> Eucalyptus</label>
+        <label for="tree-type">
+          <input id="tree-type"
+                 type="checkbox"
+                 name="cork"
+                 class="inline"
+                 value="tree-type" /> Cork Tree</label>
+        <label for="tree-type">
+          <input id="tree-type"
+                 type="checkbox"
+                 name="willow"
+                 class="inline"
+                 value="tree-type" /> Willow Tree</label>
+        <label for="tree-type">
+          <input id="tree-type"
+                 type="checkbox"
+                 name="oak"
+                 class="inline"
+                 value="tree-type" /> Oak Tree</label>
+        <label for="tree-type">
+          <input id="tree-type"
+                 type="checkbox"
+                 name="walnut"
+                 class="inline"
+                 value="tree-type" /> Black Walnut</label>
+        <label for="tree-type">
+          <input id="tree-type"
+                 type="checkbox"
+                 name="apple"
+                 class="inline"
+                 value="tree-type" /> Apple Tree</label>
+        <label for="tree-type">
+          <input id="tree-type"
+                 type="checkbox"
+                 name="palm"
+                 class="inline"
+                 value="tree-type"/> Palm Tree</label>
+        <label for="tree-type">
+          <input id="tree-type"
+                 type="checkbox"
+                 name="flamboyant"
+                 class="inline"
+                 value="tree-type" /> Flamboyant Tree</label>
+        <hr>
+        <label for="recommend">Would you recommend Plant a Tree to a friend?</label name="recommend">
+        <label for="definitely">
+          <input id="definitely"
+                type="radio"
+                name="recommend"
+                class="inline"
+                value="yes" /> Definitely</label>
+        <label for="maybe">
+          <input id="maybe"
+                 type="radio"
+                 name="recommend"
+                 class="inline"
+                 value="maybe" /> Maybe</label>
+        <label for="not sure">
+          <input id="maybe"
+                 type="radio"
+                 name="recommend"
+                 class="inline"
+                 value="not" /> Not sure</label>
+        <hr>
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+/*Nav Style*/
+
+.navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 100%;
+    border-right: solid;
+    background-color: rgba(0, 22, 22, 0.4);
+    color: black;
+    padding: 20px 0;
+}
+
+header{
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 15px;
+}
+
+.nav-link{
+text-decoration: none;
+color: black;
+    display: block;
+}
+
+.nav-list a:hover {
+  color: white;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+/*Main Style*/
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+html, body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #a3e3ff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header{
+    color: black;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+@media only screen and (max-width: 800px) {
+
+}
